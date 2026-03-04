@@ -1,0 +1,18 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:4.2.0
+    container_name: jekyll-hbsmp
+    command: jekyll serve --watch --force_polling --drafts
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - .:/srv/jekyll
+      - jekyll_bundle_hbsmp:/usr/local/bundle
+    ports:
+      - 6969:4000
+    restart: unless-stopped
+
+volumes:
+  jekyll_bundle_hbsmp:

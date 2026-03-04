@@ -1,0 +1,242 @@
+/* ─── Evergarden Winter Palette ─────────────────────────────────── */
+:root {
+    --eg-red:      #F57F82;
+    --eg-orange:   #F7A182;
+    --eg-yellow:   #F5D098;
+    --eg-lime:     #DBE6AF;
+    --eg-green:    #CAE0A7;
+    --eg-aqua:     #ADDEB9;
+    --eg-skye:     #ACE0D4;
+    --eg-snow:     #AFDFE6;
+    --eg-blue:     #B2CFED;
+    --eg-purple:   #D0BBF0;
+    --eg-pink:     #F3C0E5;
+    --eg-cherry:   #F6CEE5;
+    --eg-text:     #F8F9E8;
+    --eg-subtext1: #ADC9BC;
+    --eg-subtext0: #96B4AA;
+    --eg-overlay2: #839E9A;
+    --eg-overlay1: #6F8788;
+    --eg-overlay0: #58686D;
+    --eg-surface2: #4A585C;
+    --eg-surface1: #3D494D;
+    --eg-surface0: #2D393D;
+    --eg-base:     #1D2428;
+    --eg-crust:    #171C1F;
+}
+
+/* ─── Base Layout ────────────────────────────────────────────────── */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+    background-color: var(--eg-base);
+    overflow-x: hidden;
+}
+
+/* ─── Typography Base ────────────────────────────────────────────── */
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* ─── Browser Window ─────────────────────────────────────────────── */
+.browser-window {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ─── Tab Bar ────────────────────────────────────────────────────── */
+.tab-bar {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.tab {
+    padding: 0.45rem 1.1rem;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid var(--eg-surface2);
+    border-bottom: none;
+    background: var(--eg-surface0);
+    color: var(--eg-subtext0);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+
+.tab:hover:not(.active) {
+    background: var(--eg-surface1);
+    color: var(--eg-subtext1);
+}
+
+.tab.active {
+    background: rgba(29, 36, 40, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    color: var(--eg-text);
+    z-index: 3;
+}
+
+/* ─── Content Card ───────────────────────────────────────────────── */
+.content {
+    padding: 2.5rem 3rem;
+    background: rgba(29, 36, 40, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--eg-surface2);
+    border-radius: 0 14px 14px 14px;
+    box-shadow:
+        0 8px 40px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(172, 224, 212, 0.06);
+}
+
+
+/* ─── Headings ───────────────────────────────────────────────────── */
+.content h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--eg-skye);
+    margin: 0 0 0.3rem;
+    letter-spacing: -0.5px;
+}
+
+.content h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--eg-subtext0);
+    margin: 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--eg-surface1);
+}
+
+/* ─── Paragraphs ─────────────────────────────────────────────────── */
+.content p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--eg-text);
+    margin: 1rem 0 0;
+}
+
+/* ─── Lists ──────────────────────────────────────────────────────── */
+.content ul {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--eg-subtext1);
+    margin: 0.5rem 0 0;
+    padding-left: 1.4rem;
+}
+
+.content ul li {
+    margin-bottom: 0.2rem;
+}
+
+.content ul li::marker {
+    color: var(--eg-aqua);
+}
+
+/* ─── Links ──────────────────────────────────────────────────────── */
+.content a:not(.btn) {
+    color: var(--eg-blue);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(178, 207, 237, 0.3);
+    transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.content a:not(.btn):hover {
+    color: var(--eg-skye);
+    border-bottom-color: var(--eg-skye);
+}
+
+/* ─── Buttons ────────────────────────────────────────────────────── */
+.btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.18s ease, color 0.18s ease,
+                border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn-primary {
+    background: var(--eg-skye);
+    color: var(--eg-base);
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+    background: var(--eg-snow);
+    box-shadow: 0 2px 14px rgba(172, 224, 212, 0.35);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--eg-blue);
+    border: 1px solid var(--eg-surface2);
+}
+
+.btn-secondary:hover {
+    color: var(--eg-skye);
+    border-color: var(--eg-skye);
+    box-shadow: 0 2px 14px rgba(172, 224, 212, 0.15);
+}
+
+.btn-copied,
+.btn-copied:hover {
+    color: var(--eg-aqua);
+    border-color: var(--eg-aqua);
+    box-shadow: 0 2px 14px rgba(173, 222, 185, 0.2);
+    cursor: default;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+    body {
+        padding: 1.5rem 1rem;
+    }
+
+    .tab {
+        padding: 0.4rem 0.65rem;
+        font-size: 0.78rem;
+    }
+
+    .content {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+}
