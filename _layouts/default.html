@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html lang="en-GB">
+    {% include head.html %}
+    <body>
+        <canvas id="rain" style="position: fixed; top: 0px; left: 0px"></canvas>
+
+        <div class="browser-window">
+            {% include navbar.html %}
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+
+        <script src="/assets/js/rain.js"></script>
+        <script src="/assets/js/ui.js"></script>
+    </body>
+</html>
