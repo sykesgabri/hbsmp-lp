@@ -126,6 +126,12 @@ h2 {
     border-bottom: 1px solid var(--eg-surface1);
 }
 
+/* --- Images --------------------------------------------------- */
+
+.rail-logo {
+    width: 75%;
+}
+
 /* ─── Paragraphs ─────────────────────────────────────────────────── */
 .content p {
     font-family: "IBM Plex Sans", sans-serif;
