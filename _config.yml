@@ -1,0 +1,13 @@
+title: HardbassSMP 8.0
+description: Link to PrismLauncher instance, list of mods, general server info.
+url: https://mc.hardbass.dev
+baseurl: ""
+
+permalink: pretty
+
+exclude:
+  - .gitignore
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - .template-post/
