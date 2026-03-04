@@ -1,28 +1,28 @@
 /* ─── Evergarden Winter Palette ─────────────────────────────────── */
 :root {
-    --eg-red:      #F57F82;
-    --eg-orange:   #F7A182;
-    --eg-yellow:   #F5D098;
-    --eg-lime:     #DBE6AF;
-    --eg-green:    #CAE0A7;
-    --eg-aqua:     #ADDEB9;
-    --eg-skye:     #ACE0D4;
-    --eg-snow:     #AFDFE6;
-    --eg-blue:     #B2CFED;
-    --eg-purple:   #D0BBF0;
-    --eg-pink:     #F3C0E5;
-    --eg-cherry:   #F6CEE5;
-    --eg-text:     #F8F9E8;
-    --eg-subtext1: #ADC9BC;
-    --eg-subtext0: #96B4AA;
-    --eg-overlay2: #839E9A;
-    --eg-overlay1: #6F8788;
-    --eg-overlay0: #58686D;
-    --eg-surface2: #4A585C;
-    --eg-surface1: #3D494D;
-    --eg-surface0: #2D393D;
-    --eg-base:     #1D2428;
-    --eg-crust:    #171C1F;
+    --eg-red: #f57f82;
+    --eg-orange: #f7a182;
+    --eg-yellow: #f5d098;
+    --eg-lime: #dbe6af;
+    --eg-green: #cae0a7;
+    --eg-aqua: #addeb9;
+    --eg-skye: #ace0d4;
+    --eg-snow: #afdfe6;
+    --eg-blue: #b2cfed;
+    --eg-purple: #d0bbf0;
+    --eg-pink: #f3c0e5;
+    --eg-cherry: #f6cee5;
+    --eg-text: #f8f9e8;
+    --eg-subtext1: #adc9bc;
+    --eg-subtext0: #96b4aa;
+    --eg-overlay2: #839e9a;
+    --eg-overlay1: #6f8788;
+    --eg-overlay0: #58686d;
+    --eg-surface2: #4a585c;
+    --eg-surface1: #3d494d;
+    --eg-surface0: #2d393d;
+    --eg-base: #1d2428;
+    --eg-crust: #171c1f;
 }
 
 /* ─── Base Layout ────────────────────────────────────────────────── */
@@ -78,7 +78,9 @@ h2 {
     position: relative;
     z-index: 1;
     text-decoration: none;
-    transition: background 0.18s ease, color 0.18s ease;
+    transition:
+        background 0.18s ease,
+        color 0.18s ease;
 }
 
 .tab:hover:not(.active) {
@@ -104,7 +106,6 @@ h2 {
     border-radius: 0 14px 14px 14px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.55);
 }
-
 
 /* ─── Headings ───────────────────────────────────────────────────── */
 .content h1 {
@@ -134,6 +135,10 @@ h2 {
     margin: 1rem 0 0;
 }
 
+.content p b {
+    color: var(--eg-aqua);
+}
+
 /* ─── Lists ──────────────────────────────────────────────────────── */
 .content ul {
     font-family: "IBM Plex Sans", sans-serif;
@@ -157,7 +162,9 @@ h2 {
     color: var(--eg-blue);
     text-decoration: none;
     border-bottom: 1px solid rgba(178, 207, 237, 0.3);
-    transition: color 0.18s ease, border-color 0.18s ease;
+    transition:
+        color 0.18s ease,
+        border-color 0.18s ease;
 }
 
 .content a:not(.btn):hover {
@@ -184,8 +191,11 @@ h2 {
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
-    transition: background 0.18s ease, color 0.18s ease,
-                border-color 0.18s ease, box-shadow 0.18s ease;
+    transition:
+        background 0.18s ease,
+        color 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
 }
 
 .btn-primary {
