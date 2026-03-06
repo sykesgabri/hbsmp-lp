@@ -132,6 +132,45 @@ h2 {
     width: 75%;
 }
 
+.content img:not(.rail-logo) {
+    display: block;
+    max-width: 100%;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    border: 1px solid var(--eg-surface2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* --- Blockquotes ---------------------------------------------- */
+
+.content blockquote {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem 1rem 1.5rem;
+    border-left: 3px solid var(--eg-skye);
+    background: var(--eg-surface0);
+    border-radius: 0 8px 8px 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.8;
+    color: var(--eg-subtext1);
+}
+
+.content blockquote p {
+    margin: 0;
+    color: var(--eg-subtext1);
+}
+
+.quote-attr {
+    display: block;
+    margin-top: 0.6rem;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--eg-overlay1);
+    letter-spacing: 0.01em;
+}
+
 /* ─── Paragraphs ─────────────────────────────────────────────────── */
 .content p {
     font-family: "IBM Plex Sans", sans-serif;
@@ -237,11 +276,12 @@ h2 {
 
 /* --- iframes ---------------------------------------------------- */
 .railmap {
-    border: 0;
     display: block;
-    width: 95%;
-    margin: auto;
+    width: 100%;
     aspect-ratio: 2 / 1;
+    border: 1px solid var(--eg-surface2);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
 }
 
 /* ─── Responsive ─────────────────────────────────────────────────── */
@@ -263,6 +303,6 @@ h2 {
         font-size: 2rem;
     }
     .railmap {
-        aspect-ratio: 1 / 2;
+        aspect-ratio: 1 / 1;
     }
 }
