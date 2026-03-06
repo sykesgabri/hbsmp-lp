@@ -1,33 +1,41 @@
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-        <meta name="description" content="{{ page.description }}" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <meta name="description" content="{{ page.description }}" />
 
-        <meta property="og:title" content="{{ page.og_title | default: page.title }}" />
-        <meta property="og:description" content="{{ page.og_description | default: page.description }}" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="{{ page.og_url }}" />
-        <meta property="og:image" content="/assets/images/ogimg.webp" />
+    <meta
+        property="og:title"
+        content="{{ page.og_title | default: page.title }}"
+    />
+    <meta
+        property="og:description"
+        content="{{ page.og_description | default: page.description }}"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.og_url }}" />
+    <meta property="og:image" content="/assets/images/ogimg.webp" />
 
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
 
-        <!-- Google Fonts: Montserrat and IBM Plex Sans -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
+    {% feed_meta %}
 
-        <!-- FontAwesome 7.2.0 -->
-        <script
-            src="https://kit.fontawesome.com/c3263fcce2.js"
-            crossorigin="anonymous"
-        ></script>
+    <!-- Google Fonts: Montserrat and IBM Plex Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    />
 
-        <!-- RTA meta tag, flags site as "Restricted to Adults", causing parental controls software to automatically block it, so as to prevent annoying weans from finding this site and spamming my shit trying to get into the server. -->
-        <meta name="RATING" content="RTA-5042-1996-1400-1577-RTA" />
-    </head>
+    <!-- FontAwesome 7.2.0 -->
+    <script
+        src="https://kit.fontawesome.com/c3263fcce2.js"
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- RTA meta tag, flags site as "Restricted to Adults", causing parental controls software to automatically block it, so as to prevent annoying weans from finding this site and spamming my shit trying to get into the server. -->
+    <meta name="RATING" content="RTA-5042-1996-1400-1577-RTA" />
+</head>

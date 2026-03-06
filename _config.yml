@@ -5,6 +5,9 @@ baseurl: ""
 
 permalink: pretty
 
+plugins:
+  - jekyll-feed
+
 exclude:
   - .gitignore
   - docker-compose.yml
