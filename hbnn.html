@@ -8,6 +8,12 @@ og_url: "https://mc.hardbass.dev/hbnn/"
 <h1>HBNN</h1>
 <h2>hardbass news network</h2>
 <br />
+<div class="btn-row">
+    <a href="/feed.xml" target="_blank" class="btn btn-primary">
+        <i class="fa-solid fa-rss"></i> RSS Feed
+    </a>
+</div>
+<br />
 {% if site.posts.size > 0 %}
 <ul class="post-list">
     {% for post in site.posts %}
@@ -17,11 +23,6 @@ og_url: "https://mc.hardbass.dev/hbnn/"
     </li>
     {% endfor %}
 </ul>
-<div class="btn-row">
-    <a href="/feed.xml" target="_blank" class="btn btn-primary">
-        <i class="fa-solid fa-rss"></i> RSS Feed
-    </a>
-</div>
 {% else %}
 <p>The posts could not be loaded for whatever fuckin reason.</p>
 {% endif %}
