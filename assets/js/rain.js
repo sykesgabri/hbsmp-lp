@@ -17,13 +17,6 @@ var ctx = canvas.getContext("2d");
 var width = 0;
 var height = 0;
 
-window.onresize = function onresize() {
-  width = canvas.width = window.innerWidth;
-  height = canvas.height = window.innerHeight;
-};
-
-window.onresize();
-
 var particules = [];
 var gouttes = [];
 

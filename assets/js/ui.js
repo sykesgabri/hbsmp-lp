@@ -1,5 +1,5 @@
 // ─── Copy button ────────────────────────────────────────────────
-const copyBtn = document.querySelector(".btn-secondary");
+const copyBtn = document.getElementById("copy-ip-btn");
 
 if (copyBtn) {
   copyBtn.addEventListener("click", async (e) => {
