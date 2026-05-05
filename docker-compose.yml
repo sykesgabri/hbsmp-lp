@@ -14,3 +14,6 @@ services:
     ports:
       - 6969:4000
     restart: unless-stopped
+
+    volumes:
+      jekyll_bundle_hbsmp:
