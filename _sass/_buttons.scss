@@ -1,0 +1,55 @@
+.btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        background 0.18s ease,
+        color 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.btn-primary {
+    background: var(--eg-skye);
+    color: var(--eg-base);
+    border: 1px solid transparent;
+
+    &:hover {
+        background: var(--eg-snow);
+        box-shadow: 0 2px 14px rgba(172, 224, 212, 0.35);
+    }
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--eg-blue);
+    border: 1px solid var(--eg-surface2);
+
+    &:hover {
+        color: var(--eg-skye);
+        border-color: var(--eg-skye);
+        box-shadow: 0 2px 14px rgba(172, 224, 212, 0.15);
+    }
+}
+
+.btn-copied,
+.btn-copied:hover {
+    color: var(--eg-aqua);
+    border-color: var(--eg-aqua);
+    box-shadow: 0 2px 14px rgba(173, 222, 185, 0.2);
+    cursor: default;
+}

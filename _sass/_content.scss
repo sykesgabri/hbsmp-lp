@@ -1,0 +1,101 @@
+.content {
+    padding: 2.5rem 3rem;
+    background: rgba(29, 36, 40, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--eg-surface2);
+    border-radius: 0 14px 14px 14px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.55);
+
+    h1 {
+        font-size: 2.75rem;
+        font-weight: 800;
+        color: var(--eg-skye);
+        margin: 0 0 0.3rem;
+        letter-spacing: -0.5px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
+        color: var(--eg-subtext0);
+        margin: 0;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--eg-surface1);
+    }
+
+    img:not(.rail-logo) {
+        display: block;
+        max-width: 100%;
+        margin: 1.5rem auto;
+        border-radius: 8px;
+        border: 1px solid var(--eg-surface2);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+    }
+
+    blockquote {
+        margin: 1.5rem 0;
+        padding: 1rem 1.25rem 1rem 1.5rem;
+        border-left: 3px solid var(--eg-skye);
+        background: var(--eg-surface0);
+        border-radius: 0 8px 8px 0;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 0.95rem;
+        font-style: italic;
+        line-height: 1.8;
+        color: var(--eg-subtext1);
+
+        p {
+            margin: 0;
+            color: var(--eg-subtext1);
+        }
+    }
+
+    p {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: var(--eg-text);
+        margin: 1rem 0 0;
+
+        b {
+            color: var(--eg-aqua);
+        }
+    }
+
+    ul {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: var(--eg-subtext1);
+        margin: 0.5rem 0 0;
+        padding-left: 1.4rem;
+
+        li {
+            margin-bottom: 0.2rem;
+
+            &::marker {
+                color: var(--eg-aqua);
+            }
+        }
+    }
+
+    a:not(.btn) {
+        color: var(--eg-blue);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(178, 207, 237, 0.3);
+        transition:
+            color 0.18s ease,
+            border-color 0.18s ease;
+
+        &:hover {
+            color: var(--eg-skye);
+            border-bottom-color: var(--eg-skye);
+        }
+    }
+}
+
+.rail-logo {
+    width: 75%;
+}

@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en-GB">
+<html lang="{{ page.lang | default: 'en-GB' }}">
     {% include head.html %}
     <body>
         <canvas id="rain" style="position: fixed; top: 0px; left: 0px"></canvas>
@@ -13,7 +13,7 @@
         </div>
 
         <div style="position: fixed; bottom: 1rem; right: 1rem; z-index: 1000;">
-            <iframe style="border: 0; width: 400px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1349219244/size=large/bgcol=333333/linkcol=2ebd35/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://c418.bandcamp.com/album/minecraft-volume-alpha">Minecraft - Volume Alpha by C418</a></iframe>
+            <iframe style="border: 0; width: 400px; height: 120px;" src="{{ site.bandcamp_embed_src }}" seamless><a href="https://bandcamp.com">Music on Bandcamp</a></iframe>
         </div>
 
         <script src="/assets/js/rain.js"></script>

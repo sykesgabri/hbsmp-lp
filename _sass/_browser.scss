@@ -1,0 +1,45 @@
+.browser-window {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.tab-bar {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.tab {
+    padding: 0.45rem 1.1rem;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid var(--eg-surface2);
+    border-bottom: none;
+    background: var(--eg-surface0);
+    color: var(--eg-subtext0);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    transition:
+        background 0.18s ease,
+        color 0.18s ease;
+
+    &:hover:not(.active) {
+        background: var(--eg-surface1);
+        color: var(--eg-subtext1);
+    }
+
+    &.active {
+        background: rgba(29, 36, 40, 0.88);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        color: var(--eg-text);
+        z-index: 3;
+    }
+}

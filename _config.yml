@@ -5,6 +5,8 @@ baseurl: ""
 
 permalink: pretty
 
+bandcamp_embed_src: "https://bandcamp.com/EmbeddedPlayer/album=1349219244/size=large/bgcol=333333/linkcol=2ebd35/tracklist=false/artwork=small/transparent=true/"
+
 plugins:
   - jekyll-feed
 
